@@ -53,17 +53,27 @@ function App() {
   const setBooks = () => bookData.map((item, index) => (
     <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
   ))
-  const filter_fantasy = () => {
-    setDisplay(["Fantasy"])
+
+  //const filtered = fruitsArray.filter(objects => { return objects.nutritions.sugar > 15});
+  const filter_fantasy = () => {  
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )).filter(object => object.props.item.genre == "Fantasy"))
   }
   const filter_scifi = () => {
-    setDisplay(["Sci-fi"])
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )).filter(object => object.props.item.genre == "Sci-fi"))
   }
   const filter_nonfiction = () => {
-    setDisplay(["nonfiction"])
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )).filter(object => object.props.item.genre == "non-fiction"))
   }
   const filter_classic = () => {
-    setDisplay(["Classic"])
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )).filter(object => object.props.item.genre == "Classic"))
   }
   return (
     <div className="App">
