@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Lord of The Rings",
+    "genre": "Fantasy",
+    "price": 7.99,
+    "image": "images/lordoftherings.PNG"
+  },
+  {
+    "title": "Harry Potter",
+    "genre": "Fantasy",
+    "price": 10.95,
+    "image": "images/harrypotter.PNG"
+  },
+  {
+    "title": "Cracking The Coding Interview",
+    "genre": "non-fiction",
+    "price": 39.99,
+    "image": "images/crackingthecodinginterview.PNG"
+  },
+  {
+    "title": "Theory of Computation",
+    "genre": "non-fiction",
+    "price": 25.00,
+    "image": "images/theoryofcomputation.PNG"
+  },
+  {
+    "title": "Great Expectations",
+    "genre": "classic",
+    "price": 8.99,
+    "image": "images/greatexpectations.PNG"
+  },
+  {
+    "title": "Tale of Two Cities",
+    "genre": "Classic",
+    "price": 8.99,
+    "image": "images/taleoftwocities.PNG"
+  },
+  {
+    "title": "The Great Gatsby",
+    "genre": "Classic",
+    "price": 8.99,
+    "image": "images/thegreatgatsby.PNG"
+  },
+  {
+    "title": "Divergent",
+    "genre": "Sci-fi",
+    "price": 12.99,
+    "image": "images/divergent.PNG"
+  },
+  {
+    "title": "The Hunger Games",
+    "genre": "Sci-fi",
+    "price": 12.99,
+    "image": "images/hungergames.PNG"
+  },
+  {
+    "title": "I-Robot",
+    "genre": "Sci-fi",
+    "price": 17.99,
+    "image": "images/irobot.PNG"
+  }
+]
