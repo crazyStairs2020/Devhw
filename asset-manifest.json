@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Devhw/static/css/main.073c9b0a.css",
-    "main.js": "/Devhw/static/js/main.a2826857.js",
+    "main.js": "/Devhw/static/js/main.95c5b897.js",
     "static/media/logo.svg": "/Devhw/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Devhw/index.html",
     "main.073c9b0a.css.map": "/Devhw/static/css/main.073c9b0a.css.map",
-    "main.a2826857.js.map": "/Devhw/static/js/main.a2826857.js.map"
+    "main.95c5b897.js.map": "/Devhw/static/js/main.95c5b897.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.a2826857.js"
+    "static/js/main.95c5b897.js"
   ]
 }
