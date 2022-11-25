@@ -26,7 +26,7 @@
   {
     "title": "Great Expectations",
     "genre": "Classic",
-    "price": 8.99,
+    "price": 6.99,
     "image": "images/greatexpectations.PNG"
   },
   {
@@ -38,13 +38,13 @@
   {
     "title": "The Great Gatsby",
     "genre": "Classic",
-    "price": 8.99,
+    "price": 9.99,
     "image": "images/thegreatgatsby.PNG"
   },
   {
     "title": "Divergent",
     "genre": "Sci-fi",
-    "price": 12.99,
+    "price": 11.99,
     "image": "images/divergent.PNG"
   },
   {

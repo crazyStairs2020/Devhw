@@ -75,6 +75,16 @@ function App() {
       <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
     )).filter(object => object.props.item.genre == "Classic"))
   }
+  const filter_reset = () => {
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )))
+  }
+  const sort_price = () => {
+    setDisplay(bookData.map((item, index) => (
+      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
+    )).sort((a, b) => (a.props.item.price >= b.props.item.price) ? 1 : -1))
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -95,6 +105,8 @@ function App() {
       <button onClick={filter_scifi}>Sci-fi</button>
       <button onClick={filter_nonfiction}>non-fiction</button>
       <button onClick={filter_classic}>Classic</button>
+      <button onClick={filter_reset}>Reset</button>
+      <button onClick={sort_price}>Sort</button>
       <div>{total}</div>
     </div>
   );
