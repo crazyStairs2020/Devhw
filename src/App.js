@@ -47,43 +47,55 @@ function BookList(props) {
 function App() {
   const [cart, setCart] = useState([])
   const [total, setTotal] = useState(0)
-  const [display, setDisplay] = useState(([bookData.map((item, index) => (
+  const [display, setDisplay] = useState([bookData.map((item, index) => (
     <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-  ))]))
+  )).map((number) =>
+  <li key={number.props.item.title.toString()}>
+   {number}
+   </li>
+   )])
   const setBooks = () => bookData.map((item, index) => (
     <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
   ))
 
   //const filtered = fruitsArray.filter(objects => { return objects.nutritions.sugar > 15});
   const filter_fantasy = () => {  
-    setDisplay(bookData.map((item, index) => (
-      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )).filter(object => object.props.item.genre == "Fantasy"))
+    setDisplay([display.at(0).filter(object => object.props.children.props.item.genre == "Fantasy")])
   }
   const filter_scifi = () => {
-    setDisplay(bookData.map((item, index) => (
-      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )).filter(object => object.props.item.genre == "Sci-fi"))
+    setDisplay([display.at(0).filter(object => object.props.children.props.item.genre == "Sci-fi")])
   }
   const filter_nonfiction = () => {
-    setDisplay(bookData.map((item, index) => (
-      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )).filter(object => object.props.item.genre == "non-fiction"))
+    setDisplay([display.at(0).filter(object => object.props.children.props.item.genre == "non-fiction")])
+    console.log(display)
   }
   const filter_classic = () => {
-    setDisplay(bookData.map((item, index) => (
-      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )).filter(object => object.props.item.genre == "Classic"))
+    setDisplay([display.at(0).filter(object => object.props.children.props.item.genre == "Classic")])
+    console.log("after classic ", display)
   }
   const filter_reset = () => {
-    setDisplay(bookData.map((item, index) => (
+    setDisplay([bookData.map((item, index) => (
       <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )))
+    )).map((number) =>
+    <li key={number.props.item.title.toString()}>
+     {number}
+     </li>
+     )])
+    console.log("after resetting ", display)
   }
   const sort_price = () => {
-    setDisplay(bookData.map((item, index) => (
-      <Book item={item} cart={cart} setCart={setCart} total={total} setTotal={setTotal} />
-    )).sort((a, b) => (a.props.item.price >= b.props.item.price) ? 1 : -1))
+    const lst = []
+    const temp = display.at(0).sort((a, b) => (a.props.children.props.item.price >= b.props.children.props.item.price) ? 1 : -1)
+    //setDisplay on lst.sort wont work without []
+    for(let i = 0; i < temp.length; i++){
+      lst.push(temp.at(i).props.children);
+    }
+    console.log(lst)
+    setDisplay([lst.map((number) =>
+      <li key={number.props.item.title.toString()}>
+       {number}
+       </li>
+       )])
   }
   return (
     <div className="App">

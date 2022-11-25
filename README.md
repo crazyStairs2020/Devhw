@@ -39,3 +39,11 @@ round cart total
 use flexbox for titles
 add 2 more books
 
+
+ISSUE: display doesnt seem to work in real time
+sorting not working on screen but works in console log
+
+Also try, putting [] back into constructor but this time also
+in reset, and doing .at(0) every time
+
+
