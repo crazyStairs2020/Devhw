@@ -13,13 +13,13 @@
   },
   {
     "title": "Cracking The Coding Interview",
-    "genre": "non-fiction",
+    "genre": ["nonfiction", "CS"],
     "price": 39.99,
     "image": "images/crackingthecodinginterview.PNG"
   },
   {
     "title": "Theory of Computation",
-    "genre": "non-fiction",
+    "genre": ["nonfiction", "CS"],
     "price": 25.00,
     "image": "images/theoryofcomputation.PNG"
   },
@@ -43,7 +43,7 @@
   },
   {
     "title": "Divergent",
-    "genre": "Sci-fi",
+    "genre": ["Sci-fi", "Action"],
     "price": 11.99,
     "image": "images/divergent.PNG"
   },
@@ -58,5 +58,29 @@
     "genre": "Sci-fi",
     "price": 17.99,
     "image": "images/irobot.PNG"
+  },
+  {
+    "title": "Road to 850",
+    "genre": "nonfiction",
+    "price": 9.99,
+    "image": "images/roadto850.PNG"
+  },
+  {
+    "title": "Tesla",
+    "genre": ["nonfiction", "Biography"],
+    "price": 19.55,
+    "image": "images/tesla.PNG"
+  },
+  {
+    "title": "Sherlock Holmes",
+    "genre": ["Classic", "Action"],
+    "price": 27.32,
+    "image": "images/sherlockholmes.PNG"
+  },
+  {
+    "title": "Life 3.0",
+    "genre": "nonfiction",
+    "price": 11.82,
+    "image": "images/life3.0.PNG"
   }
 ]
